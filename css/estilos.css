@@ -1,11 +1,11 @@
 /*
 @font-face {
     font-family: 'open_sansregular';
-    src: url('fuentes/OpenSans-Regular-webfont.eot');
-    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
-         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -14,11 +14,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('fuentes/icomoon.eot?owb29c');
-	src:url('fuentes/icomoon.eot?#iefixowb29c') format('embedded-opentype'),
-		url('fuentes/icomoon.woff?owb29c') format('woff'),
-		url('fuentes/icomoon.ttf?owb29c') format('truetype'),
-		url('fuentes/icomoon.svg?owb29c#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?owb29c');
+	src:url('fonts/icomoon.eot?#iefixowb29c') format('embedded-opentype'),
+		url('fonts/icomoon.woff?owb29c') format('woff'),
+		url('fonts/icomoon.ttf?owb29c') format('truetype'),
+		url('fonts/icomoon.svg?owb29c#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -49,8 +49,6 @@
 .icon-estrella:before {
 	content: "\e601";
 }
-
-
 
 a
 {
