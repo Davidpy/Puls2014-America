@@ -4,8 +4,10 @@
 	<meta charset="utf-8" />
 	<meta name="description" content="Proyecto de Curso de Diseño Web Online Mejorando.la" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />  <!--  La cual desactivara el pinch to zoom en moviles y el navegador tomara el tamaño del dispositivo. -->
+	
 	<title>Puls2014 - Curso Desarrollo Web Mejornado.la</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> <!-- SIEMPRE PRIMERO inserta un css de google que tiene la fuenta.. que vamos a usar.. -->
+	
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' type='text/css'> <!-- SIEMPRE PRIMERO inserta un css de google que tiene la fuenta.. que vamos a usar.. -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	
@@ -31,12 +33,19 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-lapiz">
+				<a href="#" class="icon-lapiz" id="mostrar-form">
 					Publicar
 				</a>
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<label for="titulo">Titulo:</label>
+		<input type="text" id="titulo" placeholder="Titulo" required> </input>
+		<label for="url">Url:</label>
+		<input type="url" id="url" placeholder="Link" required></input>
+		<input type="submit" value="Agregar"></input>
+	</form>
 	<aside>
 		<video width="320" height="240" controls>
 			<source src="videos/lecturas.mp4" type="video/mp4">
@@ -49,7 +58,7 @@
 			<figure class="imagen_item">
 				<img src="img/imagen.jpg">
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">
 					La era del diseñador Frontend y el fin del PSD intocable
 				</a>
@@ -76,7 +85,7 @@
 			<figure class="imagen_item">
 				<img src="img/imagen.jpg">
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">
 					Conoce las ventajas de Universal Analytics y actualiza ya
 				</a>
@@ -103,7 +112,7 @@
 			<figure class="imagen_item">
 				<img src="img/imagen.jpg">
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">
 					Cómo usar múltiples bases de datos en Laravel
 				</a>
@@ -130,7 +139,7 @@
 			<figure class="imagen_item">
 				<img src="img/imagen.jpg">
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">
 					Usa el Viewport correcto para layouts en responsive
 				</a>
@@ -157,7 +166,7 @@
 			<figure class="imagen_item">
 				<img src="img/imagen.jpg">
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">
 					Mejorando.la y Cristalab estarán en el FLISol Bogotá
 				</a>
@@ -184,7 +193,7 @@
 			<figure class="imagen_item">
 				<img src="img/imagen.jpg">
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">
 					Rockstar Guitarrista Frontend: La historia de un músico emprendedor
 				</a>
@@ -217,5 +226,16 @@
 			mejorando.la 2014
 		</p>
 	</footer>
+	<!--
+	<script>
+		alert('Hola con codigo')
+	</script>
+
+	<script src="js/alert.js">
+	</script>	
+	-->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/formulario.js"></script>
+	
 </body>
 </html>
