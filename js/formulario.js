@@ -6,8 +6,9 @@ var $form = $("#formulario"),
 	$primerPost = $('.item').first(); /*tomamos el primer elemento del tipo item*/
 
 	
-function mostrarFormulario(){
+function mostrarOcultarFormulario(){
 	$form.slideToggle() /*Oculta o muestra el formulario sgun el estado. */
+	$lista.slideToggle()
 	return false;
 }	
 
@@ -21,14 +22,13 @@ function agregarPost(){
 		.text(newTitulo)
 		.attr('href', newUrl);
 
-
 	$clone.hide()
 
 	$lista.prepend($clone);
 
 	$clone.fadeIn();
 
-	mostrarFormulario();
+	mostrarOcultarFormulario();
 		
 	$titulo.val('');
 	$url.val('');	
@@ -39,6 +39,6 @@ function agregarPost(){
 }
 
 //Eventos
-$button.click( mostrarFormulario );
+$button.click( mostrarOcultarFormulario );
 $form.on('submit', agregarPost);
 

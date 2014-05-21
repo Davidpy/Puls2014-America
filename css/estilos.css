@@ -199,6 +199,13 @@ nav ul  #publicar_nav
 	top: -0.1em;
 }
 
+nav ul  #publicar_nav a.disabled{ /*poner apariencia de deshabilitado*/
+	background-color: grey;
+	cursor: default;
+	box-shadow: none;
+}
+
+
 nav ul #publicar_nav a
 {
 	background: #22BCE0;
