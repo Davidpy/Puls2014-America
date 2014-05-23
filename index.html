@@ -235,19 +235,27 @@
 	-->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/formulario.js"></script>
+	<script src="js/geo.js"></script>
 	<script>
 		window.onload = function(){
-			console.log("ya se disparon el evento onload");  <!-- se ejecuta al cargar toda la pagina-->
+			console.log("ya se disparo el evento onload");  <!-- se ejecuta al cargar toda la pagina-->
 		}
 		
 		$(function(){
 			console.log('Ya se disparo el evento DOM ContentLoader'); <!-- se ejecuta cuando esta el evento ready.. antes de cargar todo.. pero con la pagina lista..-->
 		}
 		)
+	
 	</script>
 	<script>
+		$(function(){
+			$('#publicar_nav a').on('click', function(){
+				$(this).toggleClass('disabled');
+			})
 		
+		})		
 	</script>
 	
 </body>
 </html>
+

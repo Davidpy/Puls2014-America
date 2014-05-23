@@ -5,6 +5,18 @@ var $form = $("#formulario"),
 	$lista = $("#contenido"),
 	$primerPost = $('.item').first(); /*tomamos el primer elemento del tipo item*/
 
+
+if (localStorage.getItem('autosave')) {
+	$titulo.val(sessionStorage.getItem('titulo'));
+	$url.val(sessionStorage.getItem('url'));
+}
+
+var id = setInterval(function(){
+	sessionStorage.setItem('titulo', $titulo.val());
+	sessionStorage.setItem('url', $url.val());
+}, 1000); /*funcion que corre cada cierto tiempo.. setInterval(funcion, tiempo en milisegundos)*/
+
+/*otra funcion es setTimeOut que se ejecuta una sola vez.. a los xx milisegundos..*/
 	
 function mostrarOcultarFormulario(){
 	$form.slideToggle() /*Oculta o muestra el formulario sgun el estado. */
